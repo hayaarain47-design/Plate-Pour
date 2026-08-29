@@ -1,0 +1,695 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Plate & Pour</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            Plate <span>&</span> Pour
+        </div>
+
+
+        <nav>
+
+            <a href="#home">Home</a>
+
+            <a href="#menu">Menu</a>
+
+            <a href="#about">About</a>
+
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+
+        <button class="cart-button">
+
+            Cart
+
+            <span id="cart-count">0</span>
+
+        </button>
+
+    </header>
+
+
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+
+    <section class="hero" id="home">
+
+
+        <div class="hero-overlay"></div>
+
+
+        <div class="hero-content">
+
+
+            <p class="welcome-text">
+                WELCOME TO
+            </p>
+
+
+            <h1>
+                Plate & Pour
+            </h1>
+
+
+            <h2>
+                Where Every Bite Meets a Moment
+            </h2>
+
+
+            <p class="hero-description">
+
+                Delicious flavors, beautifully served.
+                Explore our menu and order your favorites.
+
+            </p>
+
+
+            <a href="#menu" class="order-button">
+
+                Order Now
+
+            </a>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         MENU SECTION
+    ========================== -->
+
+    <section class="menu-section" id="menu">
+
+
+        <div class="section-heading">
+
+
+            <p>
+                OUR MENU
+            </p>
+
+
+            <h2>
+                Choose Your Favorite
+            </h2>
+
+
+            <span>
+                Fresh flavors made for every craving.
+            </span>
+
+
+        </div>
+
+
+
+        <!-- CATEGORY BUTTONS -->
+
+        <div class="category-buttons">
+
+
+            <button
+                class="category-btn active"
+                data-category="all">
+
+                All
+
+            </button>
+
+
+            <button
+                class="category-btn"
+                data-category="burger">
+
+                Burgers
+
+            </button>
+
+
+            <button
+                class="category-btn"
+                data-category="pizza">
+
+                Pizza
+
+            </button>
+
+
+            <button
+                class="category-btn"
+                data-category="pasta">
+
+                Pasta
+
+            </button>
+
+
+            <button
+                class="category-btn"
+                data-category="dessert">
+
+                Desserts
+
+            </button>
+
+
+            <button
+                class="category-btn"
+                data-category="drink">
+
+                Drinks
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- =========================
+             FOOD CARDS
+        ========================== -->
+
+        <div class="menu-container">
+
+
+
+            <!-- BURGER -->
+
+            <article
+                class="food-card"
+                data-category="burger">
+
+
+                <div class="food-image">
+
+                    <img
+                        src="images/a047d54afd7a9f44d0dcedd3f4a89cc5.jpg"
+                        alt="Classic Burger">
+
+                </div>
+
+
+                <div class="food-info">
+
+
+                    <h3>
+                        Classic Burger
+                    </h3>
+
+
+                    <p>
+
+                        Juicy grilled burger with fresh vegetables
+                        and our signature sauce.
+
+                    </p>
+
+
+                    <div class="food-bottom">
+
+
+                        <span class="price">
+                            Rs. 899
+                        </span>
+
+
+                        <button
+                            class="add-btn"
+                            data-name="Classic Burger"
+                            data-price="899">
+
+                            Add +
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- PIZZA -->
+
+            <article
+                class="food-card"
+                data-category="pizza">
+
+
+                <div class="food-image">
+
+                    <img
+                        src="images/3882ff7338dc5c897ab44089acca924c.jpg"
+                        alt="Margherita Pizza">
+
+                </div>
+
+
+                <div class="food-info">
+
+
+                    <h3>
+                        Margherita Pizza
+                    </h3>
+
+
+                    <p>
+
+                        Crispy crust with tomato, mozzarella
+                        and fresh basil.
+
+                    </p>
+
+
+                    <div class="food-bottom">
+
+
+                        <span class="price">
+                            Rs. 1299
+                        </span>
+
+
+                        <button
+                            class="add-btn"
+                            data-name="Margherita Pizza"
+                            data-price="1299">
+
+                            Add +
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- PASTA -->
+
+            <article
+                class="food-card"
+                data-category="pasta">
+
+
+                <div class="food-image">
+
+                    <img
+                        src="images/021fc975733c4e6634f45353d1bc432d.jpg"
+                        alt="Creamy Alfredo Pasta">
+
+                </div>
+
+
+                <div class="food-info">
+
+
+                    <h3>
+                        Creamy Alfredo
+                    </h3>
+
+
+                    <p>
+
+                        Creamy pasta with parmesan, herbs
+                        and our special sauce.
+
+                    </p>
+
+
+                    <div class="food-bottom">
+
+
+                        <span class="price">
+                            Rs. 1099
+                        </span>
+
+
+                        <button
+                            class="add-btn"
+                            data-name="Creamy Alfredo"
+                            data-price="1099">
+
+                            Add +
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- CHOCOLATE CAKE -->
+
+            <article
+                class="food-card"
+                data-category="dessert">
+
+
+                <div class="food-image">
+
+                    <img
+                        src="images/b212743f38a1cc32232c2d097ef5762d.jpg"
+                        alt="Chocolate Cake">
+
+                </div>
+
+
+                <div class="food-info">
+
+
+                    <h3>
+                        Chocolate Cake
+                    </h3>
+
+
+                    <p>
+
+                        Rich chocolate cake with smooth
+                        chocolate topping.
+
+                    </p>
+
+
+                    <div class="food-bottom">
+
+
+                        <span class="price">
+                            Rs. 699
+                        </span>
+
+
+                        <button
+                            class="add-btn"
+                            data-name="Chocolate Cake"
+                            data-price="699">
+
+                            Add +
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- DESSERT -->
+
+            <article
+                class="food-card"
+                data-category="dessert">
+
+
+                <div class="food-image">
+
+                    <img
+                        src="images/0d09aa14a9e23b001fbb61e761b16919.jpg"
+                        alt="Caramel Dessert">
+
+                </div>
+
+
+                <div class="food-info">
+
+
+                    <h3>
+                        Caramel Delight
+                    </h3>
+
+
+                    <p>
+
+                        A creamy and delicious dessert
+                        finished with smooth caramel.
+
+                    </p>
+
+
+                    <div class="food-bottom">
+
+
+                        <span class="price">
+                            Rs. 749
+                        </span>
+
+
+                        <button
+                            class="add-btn"
+                            data-name="Caramel Delight"
+                            data-price="749">
+
+                            Add +
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- ICED COFFEE -->
+
+            <article
+                class="food-card"
+                data-category="drink">
+
+
+                <div class="food-image">
+
+                    <img
+                        src="images/423330c7e5d4de9f2c2464bc91c50e7d.jpg"
+                        alt="Iced Coffee">
+
+                </div>
+
+
+                <div class="food-info">
+
+
+                    <h3>
+                        Iced Coffee
+                    </h3>
+
+
+                    <p>
+
+                        Smooth chilled coffee blended with
+                        milk and a touch of sweetness.
+
+                    </p>
+
+
+                    <div class="food-bottom">
+
+
+                        <span class="price">
+                            Rs. 499
+                        </span>
+
+
+                        <button
+                            class="add-btn"
+                            data-name="Iced Coffee"
+                            data-price="499">
+
+                            Add +
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </article>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         ABOUT SECTION
+    ========================== -->
+
+    <section
+        class="about-section"
+        id="about">
+
+
+        <div class="about-content">
+
+
+            <p>
+                OUR STORY
+            </p>
+
+
+            <h2>
+                Made With Passion
+            </h2>
+
+
+            <p>
+
+                At Plate & Pour, we believe great food creates
+                great moments. Our dishes are prepared with
+                fresh ingredients and served with care.
+
+            </p>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         CONTACT SECTION
+    ========================== -->
+
+    <section
+        class="contact-section"
+        id="contact">
+
+
+        <div class="section-heading">
+
+
+            <p>
+                GET IN TOUCH
+            </p>
+
+
+            <h2>
+                Visit Plate & Pour
+            </h2>
+
+
+            <span>
+                We'd love to serve you something delicious.
+            </span>
+
+
+        </div>
+
+
+        <div class="contact-info">
+
+
+            <p>
+                Email: hello@plateandpour.com
+            </p>
+
+
+            <p>
+                Phone: +92 300 1234567
+            </p>
+
+
+            <p>
+                Open Daily: 11:00 AM – 11:00 PM
+            </p>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+
+        <p>
+            © 2026 Plate & Pour
+        </p>
+
+
+        <p>
+            Where Every Bite Meets a Moment
+        </p>
+
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
+
