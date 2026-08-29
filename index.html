@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +7,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Plate & Pour</title>
+    <title>Plate & Pour | Restaurant</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -19,14 +18,14 @@
 
 
     <!-- =========================
-         NAVIGATION
+         NAVBAR
     ========================== -->
 
     <header class="navbar">
 
-        <div class="logo">
+        <a href="#home" class="logo">
             Plate <span>&</span> Pour
-        </div>
+        </a>
 
 
         <nav>
@@ -42,7 +41,7 @@
         </nav>
 
 
-        <button class="cart-button">
+        <button class="cart-button" onclick="openCart()">
 
             Cart
 
@@ -55,7 +54,7 @@
 
 
     <!-- =========================
-         HERO SECTION
+         HERO
     ========================== -->
 
     <section class="hero" id="home">
@@ -84,19 +83,24 @@
 
             <p class="hero-description">
 
-                Delicious flavors, beautifully served.
-                Explore our menu and order your favorites.
+                A table full of flavor, crafted for moments
+                worth remembering.
 
             </p>
 
 
             <a href="#menu" class="order-button">
 
-                Order Now
+                Explore Our Menu
 
             </a>
 
 
+        </div>
+
+
+        <div class="scroll-text">
+            Scroll to explore
         </div>
 
 
@@ -105,7 +109,7 @@
 
 
     <!-- =========================
-         MENU SECTION
+         MENU
     ========================== -->
 
     <section class="menu-section" id="menu">
@@ -113,27 +117,19 @@
 
         <div class="section-heading">
 
+            <p>FROM OUR KITCHEN</p>
 
-            <p>
-                OUR MENU
-            </p>
-
-
-            <h2>
-                Choose Your Favorite
-            </h2>
-
+            <h2>Something for Every Craving</h2>
 
             <span>
-                Fresh flavors made for every craving.
+                Fresh flavors, comforting classics and sweet moments.
             </span>
-
 
         </div>
 
 
 
-        <!-- CATEGORY BUTTONS -->
+        <!-- CATEGORY FILTER -->
 
         <div class="category-buttons">
 
@@ -196,9 +192,7 @@
 
 
 
-        <!-- =========================
-             FOOD CARDS
-        ========================== -->
+        <!-- MENU CARDS -->
 
         <div class="menu-container">
 
@@ -214,13 +208,19 @@
                 <div class="food-image">
 
                     <img
-                        src="images/a047d54afd7a9f44d0dcedd3f4a89cc5.jpg"
-                        alt="Classic Burger">
+                        src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=85"
+                        alt="Classic Burger"
+                        loading="lazy">
 
                 </div>
 
 
                 <div class="food-info">
+
+
+                    <div class="food-tag">
+                        CHEF'S PICK
+                    </div>
 
 
                     <h3>
@@ -229,15 +229,12 @@
 
 
                     <p>
-
-                        Juicy grilled burger with fresh vegetables
+                        Juicy grilled beef, fresh vegetables
                         and our signature sauce.
-
                     </p>
 
 
                     <div class="food-bottom">
-
 
                         <span class="price">
                             Rs. 899
@@ -252,7 +249,6 @@
                             Add +
 
                         </button>
-
 
                     </div>
 
@@ -274,13 +270,19 @@
                 <div class="food-image">
 
                     <img
-                        src="images/3882ff7338dc5c897ab44089acca924c.jpg"
-                        alt="Margherita Pizza">
+                        src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=900&q=85"
+                        alt="Margherita Pizza"
+                        loading="lazy">
 
                 </div>
 
 
                 <div class="food-info">
+
+
+                    <div class="food-tag">
+                        FAVORITE
+                    </div>
 
 
                     <h3>
@@ -289,15 +291,12 @@
 
 
                     <p>
-
-                        Crispy crust with tomato, mozzarella
+                        Crispy crust, tomato, mozzarella
                         and fresh basil.
-
                     </p>
 
 
                     <div class="food-bottom">
-
 
                         <span class="price">
                             Rs. 1299
@@ -312,7 +311,6 @@
                             Add +
 
                         </button>
-
 
                     </div>
 
@@ -334,13 +332,19 @@
                 <div class="food-image">
 
                     <img
-                        src="images/021fc975733c4e6634f45353d1bc432d.jpg"
-                        alt="Creamy Alfredo Pasta">
+                        src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=85"
+                        alt="Creamy Alfredo Pasta"
+                        loading="lazy">
 
                 </div>
 
 
                 <div class="food-info">
+
+
+                    <div class="food-tag">
+                        COMFORT FOOD
+                    </div>
 
 
                     <h3>
@@ -349,15 +353,12 @@
 
 
                     <p>
-
-                        Creamy pasta with parmesan, herbs
-                        and our special sauce.
-
+                        Creamy pasta with parmesan,
+                        herbs and special sauce.
                     </p>
 
 
                     <div class="food-bottom">
-
 
                         <span class="price">
                             Rs. 1099
@@ -372,7 +373,6 @@
                             Add +
 
                         </button>
-
 
                     </div>
 
@@ -394,13 +394,19 @@
                 <div class="food-image">
 
                     <img
-                        src="images/b212743f38a1cc32232c2d097ef5762d.jpg"
-                        alt="Chocolate Cake">
+                        src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85"
+                        alt="Chocolate Cake"
+                        loading="lazy">
 
                 </div>
 
 
                 <div class="food-info">
+
+
+                    <div class="food-tag">
+                        SWEET FAVORITE
+                    </div>
 
 
                     <h3>
@@ -409,15 +415,12 @@
 
 
                     <p>
-
-                        Rich chocolate cake with smooth
-                        chocolate topping.
-
+                        Rich chocolate cake with
+                        smooth chocolate topping.
                     </p>
 
 
                     <div class="food-bottom">
-
 
                         <span class="price">
                             Rs. 699
@@ -432,7 +435,6 @@
                             Add +
 
                         </button>
-
 
                     </div>
 
@@ -454,13 +456,19 @@
                 <div class="food-image">
 
                     <img
-                        src="images/0d09aa14a9e23b001fbb61e761b16919.jpg"
-                        alt="Caramel Dessert">
+                        src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=85"
+                        alt="Caramel Dessert"
+                        loading="lazy">
 
                 </div>
 
 
                 <div class="food-info">
+
+
+                    <div class="food-tag">
+                        DESSERT
+                    </div>
 
 
                     <h3>
@@ -469,15 +477,12 @@
 
 
                     <p>
-
-                        A creamy and delicious dessert
-                        finished with smooth caramel.
-
+                        A creamy dessert finished
+                        with smooth caramel.
                     </p>
 
 
                     <div class="food-bottom">
-
 
                         <span class="price">
                             Rs. 749
@@ -492,7 +497,6 @@
                             Add +
 
                         </button>
-
 
                     </div>
 
@@ -514,13 +518,19 @@
                 <div class="food-image">
 
                     <img
-                        src="images/423330c7e5d4de9f2c2464bc91c50e7d.jpg"
-                        alt="Iced Coffee">
+                        src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=900&q=85"
+                        alt="Iced Coffee"
+                        loading="lazy">
 
                 </div>
 
 
                 <div class="food-info">
+
+
+                    <div class="food-tag">
+                        SIGNATURE DRINK
+                    </div>
 
 
                     <h3>
@@ -529,15 +539,12 @@
 
 
                     <p>
-
-                        Smooth chilled coffee blended with
-                        milk and a touch of sweetness.
-
+                        Smooth chilled coffee blended
+                        with milk and sweetness.
                     </p>
 
 
                     <div class="food-bottom">
-
 
                         <span class="price">
                             Rs. 499
@@ -552,7 +559,6 @@
                             Add +
 
                         </button>
-
 
                     </div>
 
@@ -571,7 +577,41 @@
 
 
     <!-- =========================
-         ABOUT SECTION
+         EXPERIENCE SECTION
+    ========================== -->
+
+    <section class="experience-section">
+
+
+        <div class="experience-content">
+
+
+            <p>
+                THE PLATE & POUR EXPERIENCE
+            </p>
+
+
+            <h2>
+                Good Food.<br>
+                Good Company.<br>
+                Good Moments.
+            </h2>
+
+
+            <a href="#menu" class="experience-button">
+                Order Something Delicious
+            </a>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         ABOUT
     ========================== -->
 
     <section
@@ -594,9 +634,10 @@
 
             <p>
 
-                At Plate & Pour, we believe great food creates
-                great moments. Our dishes are prepared with
-                fresh ingredients and served with care.
+                At Plate & Pour, we believe food is more than
+                something on a plate. It is the laughter around
+                the table, the first sip of your favorite drink
+                and the little moments that stay with you.
 
             </p>
 
@@ -609,7 +650,7 @@
 
 
     <!-- =========================
-         CONTACT SECTION
+         CONTACT
     ========================== -->
 
     <section
@@ -621,17 +662,17 @@
 
 
             <p>
-                GET IN TOUCH
+                COME SAY HELLO
             </p>
 
 
             <h2>
-                Visit Plate & Pour
+                Plate & Pour
             </h2>
 
 
             <span>
-                We'd love to serve you something delicious.
+                Your table is waiting.
             </span>
 
 
@@ -664,15 +705,78 @@
 
 
     <!-- =========================
+         CART POPUP
+    ========================== -->
+
+    <div
+        class="cart-modal"
+        id="cart-modal">
+
+
+        <div class="cart-box">
+
+
+            <button
+                class="close-cart"
+                onclick="closeCart()">
+
+                ×
+
+            </button>
+
+
+            <h2>
+                Your Order
+            </h2>
+
+
+            <div id="cart-items">
+
+                <p class="empty-cart">
+                    Your cart is empty.
+                </p>
+
+            </div>
+
+
+            <div class="cart-total">
+
+                <strong>
+                    Total
+                </strong>
+
+                <strong id="cart-total">
+                    Rs. 0
+                </strong>
+
+            </div>
+
+
+            <button
+                class="checkout-button"
+                onclick="checkout()">
+
+                Place Order
+
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =========================
          FOOTER
     ========================== -->
 
     <footer>
 
-
-        <p>
-            © 2026 Plate & Pour
-        </p>
+        <div class="footer-logo">
+            Plate & Pour
+        </div>
 
 
         <p>
@@ -680,16 +784,18 @@
         </p>
 
 
+        <p class="copyright">
+            © 2026 Plate & Pour. All rights reserved.
+        </p>
+
     </footer>
 
 
 
-    <!-- JAVASCRIPT -->
-
     <script src="script.js"></script>
-
 
 </body>
 
 </html>
+
 
